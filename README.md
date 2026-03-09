@@ -66,14 +66,24 @@ Abra o arquivo `inicial.ipynb` no navegador e rode as células em sequência.
 - Notebook sem conteúdo sensível
 - Dados separados em arquivos `.csv` para facilitar manutenção
 
-## Próximos Passos
+## Resultados e Conclusões
 
-- Adicionar um `requirements.txt` com versões fixas
-- Incluir exemplos de saída e gráficos no README
-- Criar uma seção de resultados e conclusões do estudo
+Durante o estudo, foi possível montar um fluxo completo de classificação de score de crédito:
+
+- carregamento e inspeção da base `clientes.csv`
+- preparação dos dados com codificação de variáveis categóricas
+- divisão entre treino e teste com `train_test_split`
+- treinamento de dois modelos (`RandomForestClassifier` e `KNeighborsClassifier`)
+- comparação de desempenho com `accuracy_score`
+- geração de previsões para novos registros em `novos_clientes.csv`
+
+Conclusão prática do estudo:
+
+- o pipeline de ponta a ponta foi validado com sucesso
+- o modelo de árvore (Random Forest) foi definido como principal no notebook
+- a base de novos clientes pode ser usada para simulações de previsão de score (`Good`, `Standard`, `Poor`)
 
 ## Licença
 
 Uso educacional.
 
-Se desejar, você pode substituir esta seção por uma licença formal (ex.: MIT).
